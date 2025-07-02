@@ -1,0 +1,27 @@
+#include <iostream>
+
+void test(int i) {
+    std::cout << "the int is " << i << '\n';
+}
+
+void test(double f) {
+    std::cout << "the double is " << f << '\n';
+}
+
+
+void test(const char* ch) {
+    std::cout << "the char* is " << ch << '\n';
+}
+
+
+void test(int a, int b) {
+    std::cout << "the two ints are " << a << " and " << b << '\n';
+}
+
+int main() {
+    test(5);       
+    test(5, 5);    
+    test("five");   
+    test(3.1416);   
+    return 0;
+}
